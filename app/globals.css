@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #010824;
+    color: #eee;
+    min-height: 100vh;
+
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0 49px,
+        #eee1 49px 50px
+      ),
+      repeating-linear-gradient(to bottom, transparent 0 49px, #eee1 49px 50px);
+  }
+  &::before {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    content: "";
+    background-image: linear-gradient(to right, #d02e23, #7a43b6);
+    z-index: -1;
+    top: -200px;
+    left: calc(50% - 200px);
+    border-radius: 50% 50% 0 0;
+    pointer-events: none;
+    filter: blur(250px);
+  }
+  main {
+    width: min(1300px, 100%);
+    margin: auto;
+  }
+  .min-height {
+    height: min(700px, 60vh);
+  }
+  .clip-poligon {
+    clip-path: polygon(81% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
+  }
+
+  .name-animation {
+    width: fit-content;
+    background-image: linear-gradient(
+      to right,
+      #7be728,
+      #f3265f,
+      #7f40ac,
+      #7be728
+    );
+    background-size: 200% auto;
+    animation: gradientAnimation 5s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  @keyframes gradientAnimation {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
