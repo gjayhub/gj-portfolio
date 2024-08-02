@@ -29,6 +29,7 @@ export const MobileNavigation = ({ isOpen }: any) => {
       variants={sidebar}
       animate={isOpen ? "open" : "closed"}
       transition={{ duration: 0.6 }}
+      initial={{ opacity: 0 }}
       className='  m-0 absolute top-0 right-0 rounded-bl-lg w-[150px] bg-black z-50'
     >
       <Link href='#home' className='absolute top-2 left-10'>
