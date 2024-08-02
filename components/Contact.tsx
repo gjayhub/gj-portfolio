@@ -13,7 +13,7 @@ export default function Contact() {
         direction='left'
         className='text-center mb-12 md:w-[45%] w-[90%]'
       >
-        <h1 className='text-center leading-[3.5rem] text-[4rem] font-museo_muderno mb-4'>
+        <h1 className='text-center leading-[3rem] text-[4rem] font-museo_muderno mb-4'>
           Contact me
         </h1>
         <p className='text-slate-400 mt-9 mx-auto text-center  text-4xl'>
