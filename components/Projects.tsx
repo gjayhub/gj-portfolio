@@ -52,10 +52,10 @@ const projectList = [
 export default function Projects() {
   return (
     <section id='projects' className='py-20'>
-      <h1 className='text-center text-[2rem] md:text-[4rem]font-museo_muderno'>
+      <h1 className='text-center text-[3rem] md:text-[4rem] font-museo_muderno'>
         These are my projects
       </h1>
-      <h3 className='text-slate-400 mt-5 mb-14 mb text-center  text-pretty text-lg'>
+      <h3 className='text-slate-400 mt-5 mb-14 text-center  text-pretty text-lg'>
         I have worked on a variety of projects that showcase my skills and
         problem-solving abilities. Here are a few examples
       </h3>
@@ -79,7 +79,7 @@ export default function Projects() {
             </div>
 
             <div className='w-[90%] md:w-[45%] relative '>
-              <h3 className='text-xl font-bold '>{value.name}</h3>
+              <h3 className='text-2xl md:text-4xl font-bold '>{value.name}</h3>
               <p className='py-4 text-slate-300 '>{value.des}</p>
               <div className='flex justify-between gap-4  '>
                 <div className='flex gap-4 text-center justify-center items-center'>

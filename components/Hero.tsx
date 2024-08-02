@@ -12,7 +12,7 @@ export default function Hero() {
       className='md:pt-36 mt-10 pb-20 grid grid-cols-1 md:grid-cols-2 gap-10  '
     >
       <div className='font-museo_muderno'>
-        <MotionAppear className='text-[2rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-[1em]'>
+        <MotionAppear className='px-4 text-[2rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-[1em]'>
           <div>
             <p className=''>MY NAME IS </p>
             <span className=' block name-animation p-2 rounded-lg'>

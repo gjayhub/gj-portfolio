@@ -42,7 +42,7 @@ const listSkill = [
 export default function Skills() {
   return (
     <section className='py-20' id='skills'>
-      <h1 className='text-center text-[2rem] md:text-[4rem] font-museo_muderno'>
+      <h1 className='text-center text-[3rem] md:text-[4rem] font-museo_muderno'>
         These are my Skills
       </h1>
       <p className='text-slate-400 mt-5 text-center text-balance  mb-10'>
