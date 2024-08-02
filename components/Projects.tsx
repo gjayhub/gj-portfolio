@@ -8,7 +8,7 @@ import Link from "next/link";
 const projectList = [
   {
     name: "BoardHunt",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum assumenda voluptatibus eius illum sed non doloribus aspernatur optio quis.",
+    des: "Find a boarding house or apartment in Tuguegarao easily. Browse listings, view details, and contact landlords directly through the app.",
     tool: [
       { name: "Expo", link: "https://expo.dev/" },
       { name: "Supabase", link: "https://supabase.com/" },
@@ -23,6 +23,7 @@ const projectList = [
       },
     ],
   },
+
   {
     name: "Ecommerce",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum assumenda voluptatibus eius illum sed non doloribus aspernatur optio quis.",
