@@ -11,7 +11,7 @@ export const MotionAppear = ({
   direction?: string;
 }>) => {
   const initialX =
-    direction === "left" ? -500 : direction === "right" ? 500 : 0;
+    direction === "left" ? -200 : direction === "right" ? 200 : 0;
 
   const inView = {
     initial: { opacity: 0, scale: 0.5, x: initialX },

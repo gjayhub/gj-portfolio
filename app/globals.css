@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    margin: 0;
+    padding: 0;
+  }
   body {
     background-color: #010824;
     color: #eee;
@@ -31,6 +35,10 @@
   main {
     width: min(1300px, 100%);
     margin: auto;
+    padding: 40px;
+  }
+  section {
+    margin: 0;
   }
   .min-height {
     height: min(700px, 60vh);

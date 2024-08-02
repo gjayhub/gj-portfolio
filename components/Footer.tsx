@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className='mt-16 mx-[-50px] py-5 bg-gradient-to-r from-[#1e0420] via-[#330249] to-[#1e0b22] text-center text-white '>
+    <footer className='mt-16 py-5 bg-gradient-to-r from-[#1e0420] via-[#330249] to-[#1e0b22] text-center text-white '>
       <div>
         <h1 className='text-2xl'>Gee Jay Rivera</h1>
         <p className='text-slate-400 text-xs my-2'>Full-Stack Developer</p>

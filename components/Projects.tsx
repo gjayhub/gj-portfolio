@@ -45,7 +45,7 @@ export default function Projects() {
       <h1 className='text-center text-[4rem] font-museo_muderno'>
         These are my projects
       </h1>
-      <h3 className='text-slate-400 text-center m-auto max-w-[40vw] text-pretty text-lg'>
+      <h3 className='text-slate-400 text-center m-auto text-pretty text-lg'>
         I have worked on a variety of projects that showcase my skills and
         problem-solving abilities. Here are a few examples
       </h3>
@@ -54,14 +54,14 @@ export default function Projects() {
           <MotionDiv
             index={key}
             key={key}
-            className={`flex justify-between items-center lg:mb-4 lg:gap-20 md:gap-20  md:mb-14 mb-28  gap-6 flex-wrap ${
-              key % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            className={`flex items-center justify-center gap-10 flex-col md:flex-row lg:mb-4 md:mb-14 mb-28  flex-wrap ${
+              key % 2 === 0 ? "flex-row" : "md:flex-row-reverse"
             }`}
           >
             {/* image container */}
-            <div className='flex-1 bg-purple-black p-10 min-h-80 min-w-80 text-center rounded-3xl overflow-hidden'>
+            <div className='md:w-[45%] w-[90%]  bg-purple-black p-10 min-h-80 text-center rounded-3xl overflow-hidden'>
               <Image
-                className='rounded-xl shadow-dark min-h-96 min-w-[90%]  object-cover m-auto '
+                className='rounded-xl shadow-dark min-h-96  object-cover m-auto '
                 src={value.image}
                 alt='boardhunt'
                 width={400}
@@ -69,21 +69,18 @@ export default function Projects() {
               />
             </div>
             {/* description container */}
-            <div className=' flex-1 w-[50%] relative pb-20'>
-              <h3 className='text-5xl font-bold m-0'>{value.name}</h3>
-              <p className='text-left py-4 text-slate-300'>{value.des}</p>
-              <div className='grid grid-cols-[70px_1fr] gap-4 mt-8 items-center'>
-                <div>
-                  <Wrench />
-                </div>
-                <div className=''>
-                  <h4 className='font-bold text-lg'>Tools</h4>
-                  <div className='flex gap-8 w-[350px]'>
+            <div className='md:w-[45%] w-[90%] relative '>
+              <h3 className='text-xl font-bold '>{value.name}</h3>
+              <p className='py-4 text-slate-300 '>{value.des}</p>
+              <div className='flex justify-between gap-4 mt-8 '>
+                <div className='flex gap-4 text-center justify-center items-center'>
+                  <h4 className='font-bold text-lg text-left '>Tools:</h4>
+                  <div className='flex gap-4 flex-wrap'>
                     {value.tool.map((tool, idx) => (
                       <LinkPreview
                         key={idx}
                         url={tool.link}
-                        className='pt-4 text-slate-400 text-sm '
+                        className=' text-slate-400 text-sm '
                       >
                         {tool.name}
                       </LinkPreview>
@@ -91,9 +88,9 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className='absolute right-5'>
+              <div className=''>
                 <div className='flex gap-6 mt-6'>
-                  <Github className='border-2 w-[30px] h-[30px] border-slate-500 rounded-md' />
+                  <Github className='border-2  h-[30px] border-slate-500 rounded-md' />
                   <Image
                     className='rounded-md'
                     src='/expo.png'

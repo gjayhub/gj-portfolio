@@ -9,10 +9,10 @@ export default function Hero() {
   return (
     <section
       id='home'
-      className='pt-36 pb-20 flex flex-wrap gap-10 justify-between items-center '
+      className='pt-36 pb-20 grid grid-cols-1 md:grid-cols-2  gap-10 justify-between items-center '
     >
-      <div className='font-museo_muderno flex-1 min-w-[400px]'>
-        <MotionAppear className='text-[4rem] font-bold leading-[1em]'>
+      <div className='font-museo_muderno flex-1 '>
+        <MotionAppear className='text-[2rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-[1em]'>
           MY NAME IS
           <span className=' block name-animation p-2 rounded-lg'>GEE JAY</span>
           <TextGenerateEffect
@@ -20,7 +20,7 @@ export default function Hero() {
           Next.js, Firebase, and MongoDB. I seek opportunities where I can
           leverage my expertise to deliver efficient and sustainable websites
           that contribute to your business's growth in the digital world."
-            className='text-slate-400 mx-0 my-8 border-l-4 pl-10 border-primary'
+            className='text-slate-400 mx-0 my-8 border-l-4 pl-10 border-primary text-sm md:text-base lg:text-lg'
           />
           <Link
             href='/CV.pdf'
@@ -35,7 +35,7 @@ export default function Hero() {
           </Link>{" "}
         </MotionAppear>
       </div>
-      <div className=' text-center flex-1 min-w-[400px]'>
+      <div className=' text-center flex-1 '>
         <MotionAppear className='inline-flex  flex-col min-width shadow-large hover:shadow-large-lighter'>
           <Image
             src='/hero.png'

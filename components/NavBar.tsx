@@ -59,7 +59,7 @@ const NavBar: React.FC = () => {
 
   return (
     <header
-      className='fixed w-full max-w-[1300px] h-14 top-0 left-[50%] transform -translate-x-1/2 flex justify-between items-center px-[20px] z-30'
+      className='fixed w-full max-w-[1300px] m-0 h-14 top-0 left-[50%] transform -translate-x-1/2 flex justify-between items-center px-[20px] z-30'
       style={{ backdropFilter: "blur(10px)" }}
     >
       <Link href='#home'>

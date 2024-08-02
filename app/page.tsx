@@ -9,17 +9,17 @@ import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
-    <main>
-      <div className='px-16'>
+    <>
+      <main>
         <NavBar />
         <Hero />
         <Skills />
         <Projects />
         <Contact />
-      </div>
+      </main>
 
       <Footer />
       <ToastContainer />
-    </main>
+    </>
   );
 }

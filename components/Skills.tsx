@@ -41,11 +41,11 @@ const listSkill = [
 ];
 export default function Skills() {
   return (
-    <section className='py-20' id='skills'>
+    <section className='py-20 w-full' id='skills'>
       <h1 className='text-center text-[4rem] font-museo_muderno'>
         These are my Skills
       </h1>
-      <p className='text-slate-400 text-center text-balance m-auto w-1/2 mb-10'>
+      <p className='text-slate-400 text-center text-balance m-auto mb-10'>
         I am passionate about keeping up with industry developments and
         constantly researching to expand my knowledge. I have extensive
         knowledge with the technologies and tools listed below. 
