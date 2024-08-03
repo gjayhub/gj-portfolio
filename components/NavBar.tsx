@@ -104,7 +104,7 @@ const NavBar: React.FC = () => {
         </motion.nav>
       </div>
       <header
-        className='fixed w-full max-w-[1300px]  hidden m-0 h-14 top-0 left-[50%] transform -translate-x-1/2 md:flex justify-between items-center px-[20px] z-10'
+        className='fixed w-full max-w-[1300px]  hidden md:flex m-0 h-14 top-0 left-[50%] transform -translate-x-1/2 justify-between items-center px-[20px] z-10'
         style={{ backdropFilter: "blur(10px)" }}
       >
         <Link href='#home'>
