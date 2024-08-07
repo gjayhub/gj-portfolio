@@ -42,7 +42,7 @@ export default function Hero() {
       <div className='text-center '>
         <MotionAppear className='inline-flex  flex-col  shadow-large hover:shadow-large-lighter'>
           <Image
-            src='/hero.jpg'
+            src='/Hero.jpg'
             className='object-cover min-height object-top clip-poligon '
             height={600}
             width={400}
