@@ -17,7 +17,7 @@ const projectList = [
     image: "/boardhunt.png",
     demo: [
       {
-        code: "github",
+        code: "https://github.com/gjayhub/boardhunt",
         link: "https://expo.dev/artifacts/eas/SB81urVWVZnEQoA5RnYjH.apk",
         type: "apk",
       },
@@ -25,28 +25,36 @@ const projectList = [
   },
 
   {
-    name: "Ecommerce",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum assumenda voluptatibus eius illum sed non doloribus aspernatur optio quis.",
+    name: "CloudPuff",
+    des: "Under development. Finishing up the UI. You can still check the current progress",
     tool: [
       { name: "NextJs", link: "https://expo.dev/" },
       { name: "MongoDB", link: "https://www.mongodb.com/" },
       { name: "Zustand", link: "https://zustand-demo.pmnd.rs/" },
       { name: "TypeScript", link: "https://www.typescriptlang.org/" },
     ],
-    image: "/ecommerce.png",
-    demo: [{ code: "github", link: "/", type: "web" }],
+    image: "/vape-shop.png",
+    demo: [
+      {
+        code: "https://github.com/gjayhub/cloud-puff",
+        link: "https://cloud-puff.vercel.app/",
+        type: "web",
+      },
+    ],
   },
   {
-    name: "AniLib",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum assumenda voluptatibus eius illum sed non doloribus aspernatur optio quis.",
+    name: "Help Desk",
+    des: "Was not able to deploy because of some issue. You can still check out the code",
     tool: [
       { name: "NextJs", link: "https://expo.dev/" },
       { name: "TypeScript", link: "https://www.typescriptlang.org/" },
-      { name: "Firebase", link: "https://firebase.google.com/" },
+      { name: "Supabase", link: "https://supabase.com/" },
       { name: "Zustand", link: "https://zustand-demo.pmnd.rs/" },
     ],
-    image: "/anime.jpg",
-    demo: [{ code: "github", link: "/", type: "web" }],
+    image: "/helpdesk.png",
+    demo: [
+      { code: "https://github.com/gjayhub/helpdesk", link: "/", type: "web" },
+    ],
   },
 ];
 
@@ -117,7 +125,7 @@ export default function Projects() {
                           />
                         </Link>
                       ) : (
-                        <Link href='/'>
+                        <Link href={item.link}>
                           <Chrome className='border-2  h-[30px] border-slate-500 rounded-md' />
                         </Link>
                       )}
